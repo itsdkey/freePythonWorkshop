@@ -9,7 +9,6 @@ Zadanie 6: operacje na słownikach
 Uwaga: jeśli użytkownik poda ten sam klucz wyświetl najnowszą wartość dla tego klucza
 
 Przykłady:
-
 pierwszy 3
 drugi test
 trzeci 4.5
@@ -39,4 +38,12 @@ pierwszy = {'test': 1, 'klucz': 'wartosc'}
 drugi = {33: 1, 'klucz': 40}
 wynik: {'test': 1, 33: 1, 'klucz': 40}
 
+
+5. Stworz zmienną datetime z dzisiejszą datą i wyświetl słownie dzień tygodnia
+
+przykład:
+from datetime import datetime
+today = datetime.now()
+today.weekday() -> 4
+4 -> czwartek
 """

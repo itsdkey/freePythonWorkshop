@@ -11,7 +11,16 @@ a) "liczba A jest podzielna przez B" - gdy liczba A jest podzielna przez B (w mi
 b) "liczby nie są przez siebie podzielne" - gdy liczby nie są podzielne przez siebie
 
 
-3. Poproś użytkownika o podanie trzech liczb całkowitych (na potrzeby zadania nazwijmy je: A, B, C) i wyświetl:
+3. Stworz zmienną datetime z dzisiejszą datą i wyświetl słownie dzień tygodnia
+
+przykład:
+from datetime import datetime
+today = datetime.now()
+today.weekday() -> 4
+4 -> czwartek
+
+
+4. Poproś użytkownika o podanie trzech liczb całkowitych (na potrzeby zadania nazwijmy je: A, B, C) i wyświetl:
 a) "liczba A jest podzielna przez B" - gdy liczba A jest podzielna przez B
 b) "liczba A jest podzielna przez C" - gdy liczba A jest podzielna przez C
 c) "liczba A jest podzielna przez B i C" - gdy liczba jest podzielna przez B i C
