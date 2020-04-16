@@ -8,6 +8,7 @@ b) "to jest liczba nieparzysta" - gdy liczba nie jest podzielna przez 2
 
 2. Poproś użytkownika o podanie dwóch liczb całkowitych (na potrzeby zadania nazwijmy je: A i B) i wyświetl:
 a) "liczba A jest podzielna przez B" - gdy liczba A jest podzielna przez B (w miejsce A i B wstaw odpowiednie wartości)
+b) "liczba B jest podzielna przez A" - gdy liczba B jest podzielna przez A (w miejsce A i B wstaw odpowiednie wartości)
 b) "liczby nie są przez siebie podzielne" - gdy liczby nie są podzielne przez siebie
 
 
@@ -16,11 +17,16 @@ b) "liczby nie są przez siebie podzielne" - gdy liczby nie są podzielne przez
 przykład:
 from datetime import datetime
 today = datetime.now()
-today.weekday() -> 4
-4 -> czwartek
+today.weekday() -> 3
+3 -> czwartek
 
 
-4. Poproś użytkownika o podanie trzech liczb całkowitych (na potrzeby zadania nazwijmy je: A, B, C) i wyświetl:
+4. Poproś użytkownika o poadanie liczby całkowitej i wyświetl:
+a) "liczba jest podzielna przez 3 i 5" - jeśli liczba jest podzielna przez 3 i 5
+b) "liczba jest podzielna 2 lub 7" - jeśli liczba jest podzielna przez 2 lub 7
+
+
+5. Poproś użytkownika o podanie trzech liczb całkowitych (na potrzeby zadania nazwijmy je: A, B, C) i wyświetl:
 a) "liczba A jest podzielna przez B" - gdy liczba A jest podzielna przez B
 b) "liczba A jest podzielna przez C" - gdy liczba A jest podzielna przez C
 c) "liczba A jest podzielna przez B i C" - gdy liczba jest podzielna przez B i C
