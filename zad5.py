@@ -66,4 +66,15 @@ podaj liczbe: 8
 podaj liczbe 245
 ...
 wynik: [10, 9, 8, 245, ... ] <- w liście ma być 10 elementów
+
+
+9.* Poproś użytkownika o podanie 5ciu liczb i zapisz je do listy. następnie zsumuj te liczby
+
+Przykład:
+podaj liczbe: 1
+podaj liczbe: 2
+podaj liczbe: 3
+podaj liczbe: 100
+podaj liczbe: 22
+wynik: 128
 """
