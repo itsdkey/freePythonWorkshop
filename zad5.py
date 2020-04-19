@@ -52,6 +52,9 @@ wynik: [5, 6, 25, 3, 3, 3]
 a) mogą być powtórzenia
 b) bez powtórzeń *
 Uwaga: skorzystaj z modułu "random"
+https://docs.python.org/3/library/random.html
+import random
+losowa_liczba = random.randint(1, 100)
 
 
 8.* Poproś użytkownika o podanie 10ciu różnych liczb całkowitych i zapisz je do listy:
