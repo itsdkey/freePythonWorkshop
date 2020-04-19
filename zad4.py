@@ -52,4 +52,19 @@ A = 11
 B = 2
 C = 3
 wynik: liczba 11 nie jest podzielna przez ani przez 2 ani przez 3
+
+
+6. Poproś użytkownika o podanie ciągu znaków (przykładowe zdanie) i wyrazu, którego należy wyszukać a następnie:
+a) wyświetl "zdanie zawiera '...' - gdy zdanie zawiera szukany wyraz (w miejsce ... wstaw wyraz)
+b) wyświetl "zdnie nie zawiera '...' - gdy zdanie nie zawiera szukanego wyrazu (w miejsce ... wstaw wyraz)
+
+Przykład:
+zdanie: ala ma kota
+szukane: ala
+wynik: zdanie zawiera 'ala'
+
+zdanie: ala ma kota
+szukane: psa
+wynik: zdanie nie zawiera 'psa'
+
 """

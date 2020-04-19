@@ -47,4 +47,23 @@ first = [1, 23, 4, 5, 6, 1, 25, 3, 3, 3]
 second = [1, 4, 23]
 wynik: [5, 6, 25, 3, 3, 3]
 
+
+7. Stwórz maszynę losującą typu lotek. Wylosuj 10 liczb całkowitych i wyświetl zawartość:
+a) mogą być powtórzenia
+b) bez powtórzeń *
+Uwaga: skorzystaj z modułu "random"
+
+
+8.* Poproś użytkownika o podanie 10ciu różnych liczb całkowitych i zapisz je do listy:
+Uwaga: jeśli użytkownik poda liczbę, która jest już w liście, wyświetl: ta liczba jest już w liście
+
+Przykład:
+podaj liczbe: 10
+podaj liczbe: 9
+podaj liczbe: 10
+ta liczba jest już w liście
+podaj liczbe: 8
+podaj liczbe 245
+...
+wynik: [10, 9, 8, 245, ... ] <- w liście ma być 10 elementów
 """
