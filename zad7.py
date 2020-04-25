@@ -1,33 +1,67 @@
 """
-Zadanie 7: funkcje
+        Temat 7: funkcje
 
-Stwórz program wykonujący następujące zadanie:
-
-1. Poproś użytkownika o podanie rozmiaru listy liczb całkowitych (nazwijmy tą zmienną SIZE)
-2. Poproś użytkownika o podanie SIZE elementów, które wypełnią tą listę (niech to będą liczby całkowite)
-2.1 Uwaga: jeśli podana wartość nie jest liczbą całkowitą poproś użytkownika o podanie kolejnej wartości
-3. Po wypełnieniu listy poproś użytkownika o wybranie jednej z dwóch opcji: 1 - wyszukanie liczb parzystych, 2 - wyszukanie liczb nieparzystych
-3.1 Uwaga: jeśli użytkownik podał inną liczbę niż z dostępnych opcji, poproś go o podanie poprawnej
-4. Wyświetl listę i wynik działania:
-a) jeśli wybrał 1: wyświetl wszystkie liczby parzyste z listy (bez powtórzeń)
-b) jeśli wybrał 2: wyświetl wszystkie liczby nieparzystych z listy (z powtórzeniami)
-
-Przykład:
-Podaj rozmiar listy: 5  (size = 5)
-Podaj liczbę całkowitą: 5
-Podaj liczbę całkowitą: 2
-Podaj liczbę całkowitą: 3.5
-Podana liczba nie jest liczbą całkowitą, podaj inną
-Podaj liczbę całkowitą: 5
-Podaj liczbę całkowitą: 4
-Podaj liczbę całkowitą: 2
-Wybierz jedną z dostępnych opcji
-1: wyszukanie liczb parzystych
-2: wyszukanie liczb nieparzystych
-opcja: 0                                               |   opcja: 1
-Wybrałeś nieprawidłową opcję, wybierz ponownie         |   wybrałeś opcję: wyszukanie liczb nieparzystych
-opcja: 1                                               |   lista: [5, 2, 5, 4, 2]
-Wybrałeś opcję: wyszukanie liczb parzystych            |   wynik: [5, 5]
-lista: [5, 2, 5, 4, 2]                                 |
-wynik: [2, 4]                                          |
+Przykłady
+1. Stworzenie funkcji z dwoma wymaganymi parametrami
 """
+
+
+def foo(a, b):
+    print("funkcja foo")
+    print(a, b)
+
+
+foo(1, 'test')
+
+
+"""
+2. Stworzenie funkcji z domyślnym parametrem.
+"""
+
+
+def foo2(a='test'):
+    print("funkcja foo2")
+    print(a)
+
+
+foo2()
+foo2(1)
+foo2(a='nowy tekst')
+
+
+"""
+3. Stworzenie funkcji z różna ilością parametrów bez nazwy - *args
+args - jest to skrót od arguments. Pozwala na przekazanie różnej liczby parametrów pozycyjnych.
+Aby parametr trafił do tej tupli należy go przekazać bez podania nazwy pod jaki parametr ma trafić
+"""
+
+
+def foo_with_args(param1, *args):
+    print("funkcja foo_with_args")
+    print(param1)
+    print(args)
+
+
+foo_with_args(1)
+foo_with_args(1, 2, 3, 4, 5)
+foo_with_args(1, 2)
+
+
+"""
+4. Stworzenie funkcji z różną ilością parametrów nazwanych - **kwargs.
+kwargs - jest to skrót od keyword arguments. Pozwala na przekazanie różnej liczby parametrów nazwanych (więc takich
+gdzie kolejność można mieszać, bo program będzie wiedział pod jaki parametr go przekazać.
+"""
+
+
+def foo_with_kwargs(param1, param2='test', **kwargs):
+    print("funkcja foo_with_kwargs")
+    print(param1, param2)
+    print(kwargs)
+
+
+foo_with_kwargs(1)
+foo_with_kwargs(1, 'test2')
+foo_with_kwargs(1, param2='test2', param3=12, param4=36)
+foo_with_kwargs(1, param3='to jest test', param2='to jest drugi parametr')
+foo_with_kwargs(1, param3='to jest test', test='to jest dodatkowy parametr')
