@@ -65,3 +65,32 @@ foo_with_kwargs(1, 'test2')
 foo_with_kwargs(1, param2='test2', param3=12, param4=36)
 foo_with_kwargs(1, param3='to jest test', param2='to jest drugi parametr')
 foo_with_kwargs(1, param3='to jest test', test='to jest dodatkowy parametr')
+
+
+"""
+        Zadania
+
+1. Stwórz funkcję, która przyjmie dwa parametry i zwróci sumę.
+"""
+
+
+"""
+2. Stwórz funkcję, która przyjmie dwa liczby całkowite i trzecią opcjonalną. Zwróc sumę tych 3ch wartości.
+"""
+
+
+"""
+3. Stwórz funkcję, która przyjmie opcjonalną listę i dodaj do niej element '1'. Zwróć listę.
+"""
+
+
+"""
+4. Stwórz program bazujący na dwóch funkcjach. Jedna funkcja powinna zawierać pobranie wartości. 
+Druga funkcja powinna zawierać potęgowanie wartości podanej przez użytkownika.
+Zakładamy, że użytkownik poda liczby całkowite.
+Pierwsza funkcja powinna wywoływać drugą a wynik zapisywać do zmiennej lokalnej.
+Druga funkcja powinna przyjąć dwa parametry: a - wartość podana przez użytkownika, b - liczbę, do której potęgi podnieść daną wartość
+W przypadku gdy uzytkownik poda liczbę parzystą chcemy podnieść do 2-giej potęgi
+W przypadku gdy użytkownik poda liczbę nieparzystą, chcemy podnieść tą wartość do 3-ciej potęgi.
+Na konieć zwróć wynik.
+"""
