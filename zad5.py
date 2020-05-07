@@ -234,7 +234,7 @@ Przykład:
 podaj liczbe: 10
 podaj liczbe: 9
 podaj liczbe: 10
-ta liczba jest już w liście
+liczba 10 jest już w liście. numbers=[10, 9]
 podaj liczbe: 8
 podaj liczbe 245
 ...
@@ -245,6 +245,8 @@ wynik: [10, 9, 8, 245, ... ] <- w liście ma być 10 elementów
 
 """
 9.* Poproś użytkownika o podanie 5ciu liczb i zapisz je do listy. następnie zsumuj te liczby
+
+Zadanie zrealizuj za pomocą dwóch pętli for lub wbudowanej funkcji 'sum'.
 
 Przykład:
 podaj liczbe: 1
