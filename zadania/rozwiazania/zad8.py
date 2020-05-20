@@ -1,75 +1,10 @@
 """
-        Temat 8: Tuples
-
-Przykłady
-1. Stwórz i wyświetl tuple,
-a) za pomocą zwykłych nawiasów
-b) bez nawiasów (tzw. packing)
-c) za pomocą klasy tuple()
-"""
-print('### zadanie 1')
-
-print('#### punkt a')
-
-my_tuple = (1, 2)
-print(my_tuple)
-
-print('#### punkt b')
-my_variable = 203
-my_other_variable = 'test for tuples'
-my_tuple = my_variable, my_other_variable
-print(my_tuple)
-
-print('#### punkt c')
-my_iterable = [i for i in range(10, 30, 2)]
-my_tuple = tuple(my_iterable)
-print(my_tuple)
-
-
-"""
-2. Wykonaj tzw. unpacking na tupli (1, 2, 'test', {'test': 'value'})
-"""
-print('### zadanie 2')
-my_tuple = (1, 2, 'test', {'test': 'value'})
-a, b, c, d = my_tuple
-print(f'{a=} {b=} {d=} {c=}')
-
-
-"""
-3. Scal dwie tuple
-"""
-print('### zadanie 3')
-temp = (1, 2) + (3, 4)
-print(temp)
-
-
-"""
-4. Stwórz tuple, która będzie zawierać 3 razy po każdym elemencie z tupli:
-    (1, 'test', {'test', 'value'})
-"""
-print('### zadanie 4')
-temp = (1, 'test', {'test', 'value'}) * 3
-print(temp)
-
-
-"""
-5. Stwórz funkcję która zwróci więcej niż 1 wartość
-"""
-print('### zadanie 5')
-
-
-def foo():
-    return 'test', 100
-
-
-print(foo())
-
-
-"""
         Zadania
 
 1. Stwórz tuple i ją wyświetl
 """
+my_tuple = (1, 'test', {'key': 123})
+print(my_tuple)
 
 
 """
@@ -88,6 +23,19 @@ wynik: 20, 20, 20, 20, 20
 """
 
 
+def dummy_function(n):
+    if n % 10 == 0:
+        return (n,) * 5
+    elif n % 2 == 0:
+        return (n,) * 2
+    elif n % 5 == 0:
+        return (n,) * 3
+
+
+print(dummy_function(4))
+print(dummy_function(15))
+print(dummy_function(20))
+
 """
 3. Stwórz tuple i wyświetl tuple składającą się z elementów 
     pod nieparzystymi indexami
@@ -95,12 +43,23 @@ Przykład:
 my_tuple = (1, 10, 23, 'test', {'test': 'value'}, 'to jest przyklad zdania')
 wynik: (10, 'test', 'to jest przykład zdania')
 """
-
+from random import randint
+my_tuple = tuple(randint(10, 333) for i in range(10))
+print(my_tuple)
+print(my_tuple[1::2])
 
 """
 4. Stwórz 3-elementową tuple i funkcję która przyjme 3 parametry.
     Następnie przekaż te elementy do funkcji za pomocą operacji unpacking
 """
+
+
+def dummy_function_with_three_parameters(a, b, c):
+    print(f'{c=}, {b=} {a=}')
+
+
+my_tuple = ('test', [1234, 123, 1], 10)
+dummy_function_with_three_parameters(*my_tuple)
 
 
 """
@@ -113,6 +72,17 @@ wynik: (10, 'test', 'to jest przykład zdania')
 """
 
 
+def check_if_even(*args):
+    if len(args) % 2 == 0:
+        return 'parzysta liczba parametrów'
+    else:
+        return 'nieparzysta liczba parametrów'
+
+
+print(check_if_even(1, 2, 3, 4, 5, 6))
+print(check_if_even('test', {(1, 2): 123}))
+print(check_if_even('', None, 123))
+
 """
 6. Stwórz funkcję która przyjmuje następujące parametry:
     a - tuple z elementami
@@ -121,9 +91,29 @@ wynik: (10, 'test', 'to jest przykład zdania')
 """
 
 
+def return_value(local_tuple, index):
+    return local_tuple[index]
+
+
+print(return_value((None, {(1, 2): 'test'}, 'temp', 123), 0))
+print(return_value((None, {(1, 2): 'test'}, 'temp', 123), 1))
+print(return_value((None, {(1, 2): 'test'}, 'temp', 123), 2))
+print(return_value((None, {(1, 2): 'test'}, 'temp', 123), 3))
 """
 7. Stwórz tuple na podstawie danych podanych przez użytkownika oddzielonych 
     spacjami. Następnie przyjmij paramtr od użytkownika i sprawdz czy podana
     wartość jest w tupli. Wyświetl 'jest' jeśli jest, a 'nie ma' jeśli wartość
     nie została znaleziona.
 """
+
+
+def search_for_value(values, value):
+    if value in values:
+        return 'jest'
+    return 'nie ma'
+
+
+values = input('Podaj elementy oddzielone spacjami: ')
+values = values.split(' ')
+value = input('Czego szukamy? ')
+print(search_for_value(values, value))

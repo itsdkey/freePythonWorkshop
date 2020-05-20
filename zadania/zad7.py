@@ -75,7 +75,7 @@ foo_with_kwargs(1, param3='to jest test', test='to jest dodatkowy parametr')
 
 
 """
-2. Stwórz funkcję, która przyjmie dwa liczby całkowite i trzecią opcjonalną. Zwróc sumę tych 3ch wartości.
+2. Stwórz funkcję, która przyjmie dwie liczby całkowite i trzecią opcjonalną. Zwróc sumę tych 3ch wartości.
 """
 
 
