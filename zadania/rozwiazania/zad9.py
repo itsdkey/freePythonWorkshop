@@ -100,17 +100,20 @@ for stack in stacks:
         2. Rzucie kostką
         3. Przechowywaniu swojego wyniku
 """
-from random import randint, shuffle
+from random import randint, shuffle, uniform
+from time import sleep
 
 
 class Player:
     """Class representing a player."""
 
     def __init__(self, name):
-        self.name = name
+        self.name = name.capitalize()
         self.points = 0
 
     def roll(self):
+        print('rzucam kostką...')
+        sleep(uniform(0.5, 2))
         points = randint(1, 6)
         print(f'rzuciłem: {points}')
         self.points += points
@@ -137,7 +140,7 @@ class Game:
         index = 0
         while True:
             player = self.players[index]
-            print(f'Kolej gracza {player.name}')
+            print(f'Kolejny... {player.name}')
             player.roll()
             if player.points >= self.max_points:
                 print(f'Wygrał gracz {player.name}!')
