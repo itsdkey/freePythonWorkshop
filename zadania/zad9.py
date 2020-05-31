@@ -31,11 +31,11 @@ print(f'{p1.health=}, {p2.health=}')
 
     1. Stwórz klasę Stos, która będzie posiadać:
         a) atrybut klasowy: stack - lista, która będzie używana w ramach stosu
-        b) atrybut: name, który będzie używany by określać jaki to jest stos
-        c) metodę "add", która będzie dodawać element na początek listy,
-        d) metodę "pop", która usunie i wyświetli pierwszy element z listy,
+        b) atrybut instancyjny: name, który będziemy używać by określać jaki to jest stos
+        c) metodę "add", która będzie dodawać element na szczyt stosu,
+        d) metodę "pop", która usunie i wyświetli element ze szczytu stosu,
         e) metodę "length", która wyświetli aktualną wielkość stosu
-        f) metodę "clear", która będzie zdejmować kolejne elementy z listy aż do jej wyczyszczenia    
+        f) metodę "clear", która będzie zdejmować kolejne elementy ze stosu aż do jej   
     1.1 Stwórz dwie instancje typu Stos
     1.2 Dodaj 3 elementy do pierwszego stosu, wyświetl dwa stosy
     1.3. Wykorzystaj atrybut instancyjny by naprawić błąd związany z punktem 1.2
